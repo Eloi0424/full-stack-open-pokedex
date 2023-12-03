@@ -18,4 +18,4 @@ jobs:
           echo "Now it is $(date)"
       - name: List files
         run: |
-          dir /B
+          dir
