@@ -33,3 +33,10 @@ jobs:
           command: npm run test:e2e
           start: npm run start-prod
           wait-on: http://localhost:5000
+      - name: Deploy to Render
+        uses: Bounceapp/render-action@0.7.1
+        with:
+          service-id: ${{ secrets.RENDER_DEPLOY_SERVICE_ID }}
+          retries: 20
+          wait: 16000
+          sleep: 30000
