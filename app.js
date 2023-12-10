@@ -11,7 +11,7 @@ app.get("/api/version", (req, res) => {
   res.send("2.0");
 })
 app.get('/health', (req, res) => {
-  // throw 'error...'
+  throw 'error...'
   res.send('OKK')
 })
 
