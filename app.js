@@ -8,7 +8,7 @@ app.use(express.static("dist"));
 
 
 app.get("/api/version", (req, res) => {
-  res.send("1.0");
+  res.send("2.0");
 })
 app.get('/health', (req, res) => {
   // throw 'error...'
