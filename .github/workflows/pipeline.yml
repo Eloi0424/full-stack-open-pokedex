@@ -34,4 +34,4 @@ jobs:
           start: npm run start-prod
           wait-on: http://localhost:5000
       - name: Trigger deployment
-        run: curl https://api.render.com/deploy/srv-clqo7v1jvg7s73e8t8r0?key=an-rX6wbhW0?key=rnd_14Rn0BpRTYwRvxGObXVdi7ItybRi
+        run: curl https://api.render.com/deploy/${{ secrets.RENDER_DEPLOY_SERVICE_ID }}?key=${{ secrets.RENDER_API_KEY }}
